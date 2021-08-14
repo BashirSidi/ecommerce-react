@@ -1,13 +1,5 @@
-# Salinaka | E-commerce react app
+# Bashir Sidi | E-commerce react app
 Simple ecommerce react js app with firebase [typescript].
-![Firebase Deploy](https://github.com/jgudo/ecommerce-react/workflows/Firebase%20Deploy/badge.svg)
-
-### [Live demo](https://salinaka-ecommerce.web.app/)
-
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny1.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny2.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny3.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny7.png)
 
 ## Run Locally
 ### 1. Install Dependencies
@@ -19,7 +11,7 @@ $ npm install
 Login to your google account and create a new firebase project [here](https://console.firebase.google.com/u/0/)
 
 Create an `env` file - Set filename`.env.prod` file for production and `.env.dev`for development and save it in the root of your project folder
-and add the following configuration details. You can either use the same configuration details for both development and production but it's best to make separate projects. It can be found on your firebase project settings.
+and add the following configuration details. 
 
 ```
 // SAMPLE CONFIG .env.dev, you should put the actual config details found on your project settings
