@@ -14,10 +14,10 @@ import * as Yup from 'yup';
 
 // Default brand names that I used. You can use what you want
 const brandOptions = [
-  { value: 'Salt Maalat', label: 'Salt Maalat' },
-  { value: 'Betsin Maalat', label: 'Betsin Maalat' },
-  { value: 'Sexbomb', label: 'Sexbomb' },
-  { value: 'Black Kibal', label: 'Black Kibal' }
+  { value: 'Shadda', label: 'Shadda' },
+  { value: 'Yard', label: 'Yard' },
+  { value: 'Lace', label: 'Lace' },
+  { value: 'Others', label: 'Others' }
 ];
 
 const FormSchema = Yup.object().shape({
@@ -68,7 +68,7 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
     isFileLoading,
     onFileChange,
     removeImage
-  } = useFileHandler({ image: {}, imageCollection: product?.imageCollection || [] });
+  } = useFileHandler({ image: { }, imageCollection: product?.imageCollection || [] });
 
   const onSubmitForm = (form) => {
     if (imageFile.image.file || product.imageUrl) {
@@ -106,7 +106,7 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
                     name="name"
                     type="text"
                     label="* Product Name"
-                    placeholder="Gago"
+                    placeholder="Name"
                     style={{ textTransform: 'capitalize' }}
                     component={CustomInput}
                   />
@@ -165,7 +165,7 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
                     iid="keywords"
                     isMulti
                     disabled={isLoading}
-                    placeholder="Create/Select Keywords"
+                    placeholder="Keywords"
                     label="* Keywords"
                   />
                 </div>
@@ -178,8 +178,8 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
                     type="number"
                     isMulti
                     disabled={isLoading}
-                    placeholder="Create/Select Sizes"
-                    label="* Sizes (Millimeter)"
+                    placeholder="Sizes"
+                    label="* Sizes (per yard)"
                   />
                 </div>
               </div>

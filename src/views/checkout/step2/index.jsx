@@ -39,7 +39,7 @@ const FormSchema = Yup.object().shape({
 });
 
 const ShippingDetails = ({ profile, shipping, subtotal }) => {
-  useDocumentTitle('Check Out Step 2 | Salinaka');
+  useDocumentTitle('Check Out Step 2 | Bsalis');
   useScrollTop();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -48,7 +48,7 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
     fullname: shipping.fullname || profile.fullname || '',
     email: shipping.email || profile.email || '',
     address: shipping.address || profile.address || '',
-    mobile: shipping.mobile || profile.mobile || {},
+    mobile: shipping.mobile || profile.mobile || { },
     isInternational: shipping.isInternational || false,
     isDone: shipping.isDone || false
   };

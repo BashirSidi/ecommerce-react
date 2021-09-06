@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "bsalis-ecommerce",
+    "staging": "ecommerce-5f237"
+  },
+  "targets": {}
+}

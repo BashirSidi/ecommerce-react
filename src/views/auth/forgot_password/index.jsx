@@ -11,12 +11,12 @@ const ForgotPassword = () => {
   }));
   const dispatch = useDispatch();
   const didMount = useDidMount();
-  const [forgotPWStatus, setForgotPWStatus] = useState({});
+  const [forgotPWStatus, setForgotPWStatus] = useState({ });
   const [isSendingForgotPWRequest, setIsSending] = useState(false);
-  const [field, setField] = useState({});
+  const [field, setField] = useState({ });
 
   useScrollTop();
-  useDocumentTitle('Forgot Password | Salinaka');
+  useDocumentTitle('Forgot Password | Bsalis');
   useEffect(() => {
     if (didMount) {
       setForgotPWStatus(authStatus);

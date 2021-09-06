@@ -31,7 +31,7 @@ const FormSchema = Yup.object().shape({
 });
 
 const EditProfile = () => {
-  useDocumentTitle('Edit Account | Salinaka');
+  useDocumentTitle('Edit Account | Bsalis');
   useScrollTop();
 
   const modal = useModal();
@@ -51,16 +51,16 @@ const EditProfile = () => {
     fullname: profile.fullname || '',
     email: profile.email || '',
     address: profile.address || '',
-    mobile: profile.mobile || {}
+    mobile: profile.mobile || { }
   };
 
   const {
     imageFile,
     isFileLoading,
     onFileChange
-  } = useFileHandler({ avatar: {}, banner: {} });
+  } = useFileHandler({ avatar: { }, banner: { } });
 
-  const update = (form, credentials = {}) => {
+  const update = (form, credentials = { }) => {
     dispatch(updateProfile({
       updates: {
         fullname: form.fullname,
